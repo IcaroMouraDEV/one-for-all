@@ -8,6 +8,6 @@ INNER JOIN SpotifyClone.usuario AS u
   ON h.usuario_id = u.id
 INNER JOIN SpotifyClone.plano AS p
   ON u.plano_id = p.id
-WHERE u.plano_id IN (1, 2)
+WHERE u.plano_id IN (1, 4)
 GROUP BY m.nome 
 ORDER BY m.nome ASC;
