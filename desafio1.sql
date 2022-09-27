@@ -35,7 +35,7 @@ USE SpotifyClone;
       id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
       nome VARCHAR(100) NOT NULL,
       duracao INT NOT NULL,
-      ano_lacamento INT NOT NULL,
+      ano_lancamento INT NOT NULL,
       artista_id INT NOT NULL,
       album_id INT NOT NULL,
 
@@ -91,7 +91,7 @@ VALUES
 	('Blind Guardian'),
 	('Nina Simone');
 
-INSERT INTO `SpotifyClone`.`album` (album, artista_id)
+INSERT INTO `SpotifyClone`.`album` (nome, artista_id)
 VALUES
 	('Renaissance', 1),
 	('Jazz', 2),
@@ -115,7 +115,7 @@ VALUES
   ('The Bard’s Song',	244, 2007, 5, 7),
   ('Feeling Good', 100,	2012, 6, 8);
 
-INSERT INTO `SpotifyClone`.`historico_reproducao` (usuario_id, cancoes_id, data_reproducao)
+INSERT INTO `SpotifyClone`.`historico` (usuario_id, musica_id, data_reproducao)
 VALUES
   (1, 8, '2022-02-28 10:45:55'),
   (1, 2, '2020-05-02 05:30:35'),
